@@ -2,7 +2,7 @@
  * @Author: Westen
  * @Date: 2025-05-09 11:23:14
  * @LastEditors: your Name
- * @LastEditTime: 2025-05-09 22:11:20
+ * @LastEditTime: 2025-05-11 00:14:46
  * @Description: 发票页面
  */
 import Pagination from '@/app/ui/invoices/pagination';
@@ -13,7 +13,11 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+    title: 'Invoices',
+};
 export default async function Page(props: {
     searchParams?: Promise<{
         query?: string;
