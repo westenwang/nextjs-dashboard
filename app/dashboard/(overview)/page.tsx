@@ -2,7 +2,7 @@
  * @Author: Westen
  * @Date: 2025-05-09 11:22:29
  * @LastEditors: your Name
- * @LastEditTime: 2025-05-09 21:11:30
+ * @LastEditTime: 2025-05-11 09:21:59
  * @Description: 
  */
 import CardWrapper from '@/app/ui/dashboard/cards';
@@ -11,6 +11,13 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Dashboard',
+};
+
 export default async function Page() {
     return (
         <main>

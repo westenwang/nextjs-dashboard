@@ -2,13 +2,17 @@
  * @Author: Westen
  * @Date: 2025-05-10 23:42:44
  * @LastEditors: your Name
- * @LastEditTime: 2025-05-10 23:42:52
+ * @LastEditTime: 2025-05-11 09:21:31
  * @Description: 登录页面
  */
 import AcmeLogo from '@/app/ui/acme-logo';
 import LoginForm from '@/app/ui/login-form';
 import { Suspense } from 'react';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+    title: 'Login',
+};
 export default function LoginPage() {
     return (
         <main className="flex items-center justify-center md:h-screen">
